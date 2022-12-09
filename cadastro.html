@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/log-cad-contato.css">
+    <script src="js/log-cad-contato.js"> defer</script>
+    <script src="js/cadastro.js" defer></script>
+
+    <Title>Cadastro</title>
+
+</head>
+<style>
+
+</style>
+
+<body class="background">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom1">
+        <div class="container">
+            <a class="navbar-brand" id="img-nav" href="index.html"><img src="img/SOSBEE.jpg" alt="" class="img-fluid"
+                    height="280px" width="280px" padding="0px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav p-3 ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-item nav-link fw-bold fonte1"> Home </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-item nav-link white fw-bold fonte1"> Contato </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html">
+                        <button type="button"
+                            class="btn nav-item fonte1 px-3 mx-0 mx-md-2 btn-rounded efeito1">Login</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="cadastro.html">
+                        <button type="button"
+                            class="btn nav-item fonte1 px-3 mx-0 mx-md-2 btn-rounded efeito2">Cadastro</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="w-100 vh-100 d-flex justify-content-center">
+        <div class="login mx-3 e container">
+            <div class="shadow e">
+                <div class="row p-4">
+                <section class="col-md-5 d-flex justify-content-center p-5 e">
+                    <form class="d-grid gap-3 a">
+                        <div class="">
+                            <h1 class="my-2 titulo-log-cad-cont">Cadastro</h1>
+                        </div>  
+                        
+                                                    <div class="input-container d-grid justify-content-center gap-1 flex-column">
+                            
+                            <input type="text" name="nome" id="nome" placeholder="Nome" required> </input>
+                            <input type="email" name="email" id="email" placeholder="E-mail" > </input>
+                            <input type="password" name="senha" id="senha" placeholder="Senha" required> </input>
+                            
+                                <input class="" type="number" name="cep" id="cep" placeholder="CEP" required > </input>
+                                <input class="" type="text" name="rua" id="rua" placeholder="Rua" > </input>
+                            
+                            
+                            <select class="form-select" aria-label="options">
+  <option selected>Selecione seu bairro</option>
+  <option value="1">Alto Alegre</option>
+  <option value="2">Área Nobre</option>
+  <option value="3">Boa Vista</option>
+  <option value="4">Cacimbas</option>
+  <option value="5">Centro</option>
+  <option value="6">Conjunto COHAB</option>
+  <option value="7">Coqueiro</option>
+  <option value="8">Cruzeiro</option>
+  <option value="9">Das Flores</option>
+  <option value="10">Estação</option>
+  <option value="11">Fazendinha</option>
+  <option value="12">Julho</option>
+  <option value="13">Ladeira</option>
+  <option value="14">Madalenas</option>
+  <option value="15">Maranhão</option>
+  <option value="16">Mourão</option>
+  <option value="17">Nova Aldeota</option>
+  <option value="18">Picos</option>
+  <option value="19">São Francisco</option>
+  <option value="20">São Sebastião</option>
+  <option value="21">Senharão</option>
+  <option value="22">Violete</option>
+  
+</select>
+                            
+                            
+                            <button class="btn botao mt-1" id="btnCadastrar">Envie</button>
+                        </div>
+                                             
+
+                        
+                    </form>
+                </section>
+                <section class="col-md-7 e d-flex justify-content-center my-auto">
+                    <img class="img-fluid e" src="img/imgbee.png" id="img-lcc"alt=""
+                            height="350px"
+                            width="350px"
+                    >
+                </section>
+            </div>
+            </div>
+ 
+        </div>
+        
+    </main>
+
+
+    <div class="caixa form-add" id="caixa">
+        <div class="cont px-3 pb-4">
+            <div class="row">
+                <div class="col-12 p-0 d-flex justify-content-end">
+                    <div class="botaoFechar shadow px-3 py-2" style="border-radius: 10px;">
+                        <span id="btnFecharCaixa" class="btnFecharCaixa">X</span>
+                    </div>
+
+                </div>
+                <div class="col-12">
+                    <h6 id="mensagem" class="mensagem text-center py-5"></h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
