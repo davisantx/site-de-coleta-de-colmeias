@@ -19,7 +19,9 @@
     font-size: 25px;
 }
 
-.navbar-custom1,
+.navbar-custom1 {
+    background-color: black;
+}
 .footer-custom1 {
     background: black;
 }
@@ -84,7 +86,7 @@
 }
 
 .cor2 {
-    background-color: black;
+    color: black;
 }
 
 .cor3 {
@@ -104,6 +106,13 @@ div.modal-container {
     justify-content: center;
     align-items: center;
 
+}
+
+.margin {
+   margin-bottom: 20px;
+}
+.banner-img {
+    
 }
 
 @media (max-width: 450px) {
