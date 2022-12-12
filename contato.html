@@ -51,19 +51,27 @@
       <div class="shadow e conainer">
         <div class="row p-4">
           <section class="col-md-5 d-flex justify-content-center p-5 e">
-            <form class="d-grid gap-3 a">
+            <div class="d-grid gap-3 a">
               <div class="">
                 <h1 class="titulo-log-cad-cont my-2">Contato</h1>
               </div>
-              <div class="input-container d-grid justify-content-center gap-1 flex-column">
-                <input type="text" name="nome" id="nome" placeholder="Nome" required> </input>
-                <input type="email" name="email" id="email" placeholder="E-mail" required> </input>
-                <input type="text" name="mensagem" id="mensagem" placeholder="Mensagem" required> </input>
+              <div>
+                <form action="https://formsubmit.co/6b1b17aee670cb69fb65912497cd1a4f" method="POST" 
+                class="input-container d-grid justify-content-center gap-1 flex-column">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="text" name="name" id="nome" placeholder="Nome" required> </input>
+                  <input type="email" name="email" id="email" placeholder="E-mail" required> </input>
+                  <input type="text" name="message" id="mensagem" placeholder="Mensagem" required> </input>
+                  <button type="submit"class="btn botao mt-1" id="btnEntrar">Enviar</button>
+               </form>
+             
+             
+                
 
-                <button class="btn botao mt-1" id="btnEntrar">Enviar</button>
+                
               </div>
 
-            </form>
+            </div>
           </section>
           <section class="col-md-7 e d-flex justify-content-center my-auto">
             <img class="img-fluid e" src="img/imgbee.png" id="img-lcc" alt="" height="350px" width="350px">
