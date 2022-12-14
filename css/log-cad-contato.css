@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
@@ -93,7 +93,7 @@ span.mensagem {
 }
 
  @media (max-width: 991px) {
-     .input-container input, .input-container-home input {
+     .input-container input, .input-container-home input, .form-select {
          width: 250px;
      }
      
@@ -104,16 +104,24 @@ span.mensagem {
  }
 
  @media (max-width: 767px) {
+    .input-container-home input, .select-home {
+        width: 250px;
+    }
      #img-lcc {
          display: none;
      }
  }
+ @media (max-width: 576px) {
+    .input-container-home input, .select-home {
+        width: 200px;
+    }
+ }
 
  @media (max-width: 400px) {
-     .input-container input {
+     .input-container input, .form-select {
          width: 80vw;
      }
-     .input-container-home input {
+     .input-container-home input, .select-home {
          width: 60vw;
      }
  }
