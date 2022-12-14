@@ -19,6 +19,12 @@
     font-size: 25px;
 }
 
+.fonte4 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+}
+
 .navbar-custom1 {
     background-color: black;
 }

@@ -91,6 +91,9 @@ main.modal-cadastro {
 span.mensagem {
     font-size: 30px;
 }
+.btnFecharCaixa {
+    background: whie;
+}
 
  @media (max-width: 991px) {
      .input-container input, .input-container-home input, .form-select {
