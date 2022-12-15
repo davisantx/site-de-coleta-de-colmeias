@@ -1,5 +1,5 @@
 const pagLogin = true;
 
-if(pagLogin) {
+if (pagLogin) {
     removeMensagem();
 }

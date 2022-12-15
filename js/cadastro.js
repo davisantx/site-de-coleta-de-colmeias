@@ -16,7 +16,7 @@ const verificaSeNomeEValido = () => {
                 alertThrow('Digite o nome e o sobrenome válidos');
             }
         }
-        
+
     })
 }
 
@@ -25,62 +25,64 @@ const verificaSeSenhaEValida = () => {
     let btnCadastrar = pegarObjeto('btnCadastrar', 'Elemento botão não encontrado');
     btnCadastrar.addEventListener('click', () => {
         const senhaUsuario = senha.value;
-        verificaQuantidadeDeCaracteres(senhaUsuario, 6, 'Digite uma senha válida');
+        verificaQuantidadeDeCaracteres(senhaUsuario, 6, 'Email ou senha inválidos!');
     })
 }
 
 const verificaSeInformacoesDoUsuarioSaoValidas = () => {
-    verificaSeNomeEValido();
+    if (document.getElementById('nome').value.length < 2) {
+        verificaSeNomeEValido();
+
+    }
     verificaSeSenhaEValida();
 }
 'use strict';
 
-const limparFormulario = (endereco) =>{
+const limparFormulario = (endereco) => {
     document.getElementById('rua').value = '';
     document.getElementById('selected').value = '';
 }
 
-const preencherFormulario = (endereco) =>{
-    
+const preencherFormulario = (endereco) => {
+
     document.getElementById('rua').value = endereco.logradouro;
-    
+
     var select = document.querySelector(".form-select");
-    
-    for(let i = 0; i < select.options.length; i++) {
-        if(select.options[i].text == endereco.bairro) {
+
+    for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].text == endereco.bairro) {
             select.selectedIndex = i;
-            
-        }else {
-            
+
+        } else {
+
         }
-            
-        
+
     }
-    
+
 }
 
 
 const eNumero = (numero) => /^[0-9]+$/.test(numero);
 
-const cepValido = (cep) => cep.length == 8 && eNumero(cep); 
+const cepValido = (cep) => cep.length == 8 && eNumero(cep);
 
-const pesquisarCep = async() => {
+const pesquisarCep = async () => {
     limparFormulario();
-    
-    const cep = document.getElementById('cep').value.replace("-","");
+
+    const cep = document.getElementById('cep').value.replace("-", "");
     const url = `https://viacep.com.br/ws/${cep}/json/`;
-    if (cepValido(cep)){
+    if (cepValido(cep)) {
         const dados = await fetch(url);
         const endereco = await dados.json();
-        if (endereco.hasOwnProperty('erro')){
+        if (endereco.hasOwnProperty('erro')) {
             document.getElementById('rua').value = 'CEP não encontrado!';
-        }else {
+        } else {
             preencherFormulario(endereco);
         }
-    }else{
+    } else {
         document.getElementById('rua').value = 'CEP incorreto!';
     }
-     
+
 }
 
 const getEndereco = () => {
@@ -95,7 +97,6 @@ document.getElementById('cep').addEventListener('focusout', pesquisarCep);
 
 
 removeMensagem();
-
 
 
 

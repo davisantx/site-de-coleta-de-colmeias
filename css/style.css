@@ -5,7 +5,7 @@
 * {
     padding: 0;
     margin: 0;
-    border-box: box-sizing;
+    box-sizing: border-box;
 }
 
 .fonte1 {
@@ -28,6 +28,7 @@
 .navbar-custom1 {
     background-color: black;
 }
+
 .footer-custom1 {
     background: black;
 }
@@ -36,6 +37,7 @@
     box-shadow: inset 0 0 0 2px;
     display: inline;
     padding: 5px;
+    background: #EBBB39;
     margin-left: 0px;
 }
 
@@ -98,9 +100,11 @@
 .cor3 {
     color: #EBBB39;
 }
+
 .container-itens {
     height: 500px;
 }
+
 div.modal-container {
     width: 100%;
     height: 100vh;
@@ -115,11 +119,9 @@ div.modal-container {
 }
 
 .margin {
-   margin-bottom: 20px;
+    margin-bottom: 20px;
 }
-.banner-img {
-    
-}
+
 
 @media (max-width: 450px) {
     #img-nav {

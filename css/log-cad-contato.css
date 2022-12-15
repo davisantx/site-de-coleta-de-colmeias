@@ -1,68 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 
- * {
-     padding: 0;
-     margin: 0;
-     box-sizing: border-box;
- }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
- :root {
-     --amarelo: #EBBB39;
-     --amarelo-claro: rgb(236, 212, 132);
-     
- }
+:root {
+    --amarelo: #EBBB39;
+    --amarelo-claro: rgb(236, 212, 132);
 
- body {
-     font-family: Poppins, sans-serif;
- }
+}
 
- main {}
+.size {
+    height: 60vh;
+}
 
- .login {
-     background: black;
-     border-radius: 0px;
-     margin-left: 30px;
-     margin-right: 30px;
- }
+.size-footer {
+    padding-top: 40px;
+}
 
- .input-container input, .input-container-home input {
-     border-radius: 5px;
-     outline: none;
-     border: 0.5px solid gray;
-     padding-left: 15px;
-     height: 50px;
-     width: 300px;
- }
+.size-main {
+    padding-top: 400px;
+}
 
- .te {
-     margin: auto;
- }
+body {
+    font-family: Poppins, sans-serif;
+}
 
- a {
-     color: var(--amarelo-claro);
-     font-size: 11px;
- }
+.login {
+    background: black;
+    border-radius: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
- .botao {
-     background-color: var(--amarelo);
- }
+.input-container input,
+.input-container-home input {
+    border-radius: 5px;
+    outline: none;
+    border: 0.5px solid gray;
+    padding-left: 15px;
+    height: 50px;
+    width: 300px;
+}
 
- h1.titulo-log-cad-cont {
-     color: white;
- }
+.te {
+    margin: auto;
+}
 
- .background {
-     background-color: black;
- }
+a {
+    color: var(--amarelo-claro);
+    font-size: 11px;
+}
 
- .b {
-     border: 1px solid red;
- }
+.botao {
+    background-color: var(--amarelo);
+}
 
- div.caixa {
+h1.titulo-log-cad-cont {
+    color: white;
+}
+
+.background {
+    background-color: black;
+}
+
+.b {
+    border: 1px solid red;
+}
+
+div.caixa {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
@@ -91,40 +102,54 @@ main.modal-cadastro {
 span.mensagem {
     font-size: 30px;
 }
+
 .btnFecharCaixa {
     background: whie;
 }
 
- @media (max-width: 991px) {
-     .input-container input, .input-container-home input, .form-select {
-         width: 250px;
-     }
-     
-     #img-lcc {
-         width: 300px;
-         height: 300px;
-     }
- }
+@media (max-width: 991px) {
 
- @media (max-width: 767px) {
-    .input-container-home input, .select-home {
+    .input-container input,
+    .input-container-home input,
+    .form-select {
         width: 250px;
     }
-     #img-lcc {
-         display: none;
-     }
- }
- @media (max-width: 576px) {
-    .input-container-home input, .select-home {
+
+    #img-lcc {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .input-container-home input,
+    .select-home {
+        width: 250px;
+    }
+
+    #img-lcc {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .input-container-home input,
+    .select-home {
         width: 200px;
     }
- }
+}
 
- @media (max-width: 400px) {
-     .input-container input, .form-select {
-         width: 80vw;
-     }
-     .input-container-home input, .select-home {
-         width: 60vw;
-     }
- }
+@media (max-width: 400px) {
+
+    .input-container input,
+    .form-select {
+        width: 80vw;
+    }
+
+    .input-container-home input,
+    .select-home {
+        width: 60vw;
+    }
+}

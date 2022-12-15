@@ -11,9 +11,10 @@ const alertThrow = (alertTh) => {
 
 const addElementoNaTela = (classDoElemento) => {
     document.querySelector(classDoElemento).style.display = 'flex';
+    removeMensagem();
 }
 
-const removeElementoDaTela= (idElemento, classDoElementoRemovido) => {
+const removeElementoDaTela = (idElemento, classDoElementoRemovido) => {
     let objeto = pegarObjeto(idElemento, 'Elemento botão não encontrado')
     objeto.addEventListener('click', () => {
         document.querySelector(classDoElementoRemovido).style.display = 'none';
@@ -23,7 +24,7 @@ const removeElementoDaTela= (idElemento, classDoElementoRemovido) => {
 
 const addMensagem = (conteudoMensagem) => {
     document.getElementById('mensagem').innerHTML = conteudoMensagem;
-    console.log(conteudoMensagem); 
+    console.log(conteudoMensagem);
     addElementoNaTela('.caixa');
 
 }
